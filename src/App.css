@@ -1,0 +1,215 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #007abf;
+}
+.container {
+  text-align: center;
+  margin: 15%;
+}
+.main_box {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0;
+  background-image: url("../public/background1.jpg");
+  color: white;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  min-height: 100vh;
+  height: 100vh;
+}
+.logo_text {
+  display: flex;
+  flex-direction: column;
+}
+.container_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#textarea {
+  margin: 35px 0 10px;
+}
+.filter {
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 69px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(199, 199, 199, 0.25);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.filter label {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(33, 75, 93, 0.5);
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+#priority select {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  margin-left: -4px;
+}
+#priority select:focus {
+  color: #214b5d;
+}
+#priority select:valid {
+  color: #214b5d;
+}
+#priority select:focus + label {
+  font-size: 14px;
+}
+#priority select:valid + label {
+  font-size: 14px;
+}
+.date input {
+  outline: none;
+  border: none;
+}
+#date {
+  border: none;
+  padding-top: 10px;
+}
+#date:focus {
+  border: none;
+  outline: none;
+}
+.date-level {
+  margin-top: 10px;
+}
+.textarea {
+  margin-top: 20px;
+  width: 408px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(199, 199, 199, 0.25);
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.text_height {
+  height: 180px;
+}
+.text_box {
+  height: 50px;
+}
+.text_area {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.text-arera:focus {
+  border: none;
+  outline: none;
+}
+.text-arera:focus {
+  border: none;
+  outline: none;
+}
+.submit {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 4px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* form text box */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  text-align: left;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+.form__field:focus ~ .form__label {
+  color: #214b5d80;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #fff;
+}
